@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>border</title>
+	<link rel=stylesheet type=text/css href=default.css>
+</head>
+<body>
+	
+<div id=header><a href=index.html>CSS REFERENCE GUIDE</a></div>
+
+<div id=navigation>
+	
+<ul>
+	<li><a href=background.html>background</a></li>
+	<li><a href=border.html>border</a></li>
+	<li><a href=clear.html>clear</a></li>
+	<li><a href=color.html>color</a></li>
+	<li><a href=display.html>display</a></li>
+	<li><a href=float.html>float</a></li>
+	<li><a href=font.html>font</a></li>
+	<li><a href=height.html>height</a></li>
+	<li><a href=letter-spacing.html>letter-spacing</a></li>
+	<li><a href=line-height.html>line-height</a></li>
+	<li><a href=list-style.html>list-style</a></li>
+	<li><a href=margin.html>margin</a></li>
+	<li><a href=opacity.html>opacity</a></li>
+	<li><a href=overflow.html>overflow</a></li>
+	<li><a href=padding.html>padding</a></li>
+	<li><a href=text-align.html>text-align</a></li>
+	<li><a href=text-decoration.html>text-decoration</a></li>
+	<li><a href=text-indent.html>text-indent</a></li>
+	<li><a href=text-transform.html>text-transform</a></li>
+	<li><a href=width.html>width</a></li>
+</ul>
+
+</div>
+	
+<div id=content>
+
+
+<h1>border</h1>
+
+	<p>The border shorthand property sets all the width, color, and style properties in one declaration.</p>
+
+		<h3>Possible Values</h3>
+
+		<ul>
+			<li>width</li>
+			<li>style</li>
+			<li>color</li>
+		</ul>
+	
+<code>h1 {border: 5px solid red;}
+
+h2 {border: 4px dotted blue;}
+
+div {border: double;}</code>
+
+
+
+<h2>border-width</h2>
+
+	<p>Specifies the width of a box’s border.</p>
+
+		<h3>Possible Values</h3>
+
+		<ul>
+			<li>length</li>
+			<li>thin</li>
+			<li>medium</li>
+			<li>thick</li>
+		</ul>
+
+		<p>Border-width can have:<p>
+		<p>One value - such as 10px, to specify the width of the entire border</p>
+		<p>Two values - such as 10px 5px, to specify the width of top/bottom (first value) and right/left (second value) borders</p>
+		<p>Three values - such as 10px 5px 2px, to specify the width of top (first value), right/left (second value) and bottom (third value)borders</p>
+		<p>Four values - such as 10px 5px 2px 1px, to specify the width of top, right, bottom and left borders respectively</p>
+
+<code>div {border-width: 15px;}
+
+div {border-width: 10px 1px;}
+
+div {border-width: thick;}</code>
+
+
+<h2>border-style</h2> 
+
+	<p>Specifies the style of an element's border.</p>
+
+		<h3>Possible Values</h3>
+
+		<ul>
+			<li>none - no border.</li>
+			<li>dotted - A series of dots </li>
+			<li>dashed - A series of dashes.</li>
+			<li>solid - A solid line.</li>
+			<li>double - Two solid lines.</li>
+			<li>groove - Patterned border that is supposed to represent a carved groove (opposite of ridge)</li>
+			<li>ridge - Patterned border that is supposed to represent an embossed ridge (opposite of groove)</li>
+			<li>inset - Patterned border that is supposed to represent an inset depression (opposite of outset)</li>
+			<li>outset - Patterned border that is supposed to represent an outset extrusion (opposite of inset)</li>
+			<li>hidden - Used with tables. Same as "none", except where there are conflicting borders. </li>
+		</ul>
+
+		<p>Border-style can have:</p>
+		<p>One value - such as solid, to specify the style of the entire border</p>
+		<p>Two values - such as solid dotted, to specify the style of top/bottom (first value) and right/left (second value) borders</p>
+		<p>Three values - such as solid dotted dashed, to specify the style of top (first value), right/left (second value) and bottom (third value) borders</p>
+		<p>Four values - such as solid dotted dashed groove, to specify the style of top, right, bottom and left borders respectively</p>
+
+<code>div {border-style: dotted;}</code>
+
+
+<h2>border-color</h2>
+
+	<p>Specifies the color of a box’s border.</p>
+
+		<h3>Possible Values</h3>
+
+		<ul>
+			<li>color</li>
+			<li>transparent</li>
+		</ul>
+		
+		<p>border-color can have:</p>
+		<p>One value - such as red, to specify the color of the entire border</p>
+		<p>Two values - such as red blue, to specify the color of top/bottom (first value) and right/left (second value) borders</p>
+		<p>Three values - such as red blue green, to specify the color of top (first value), right/left (second value) and bottom (third value) borders</p>
+	<p>Four values - such as red blue green black, to specify the color of top, right, bottom and left borders respectively</p>
+
+<code>div {border-color: coral;}</code>
+
+</div> <!-- for id=content -->
+
+<div id=footer>&copy; HTML Class of 2021</div>
+  
+</body>	
+
+</html>

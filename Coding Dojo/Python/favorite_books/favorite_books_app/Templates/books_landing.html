@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- {% load static %} -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        
+    </head>
+    <body>
+
+        <div class="logout_button">
+            <a href="/books"><button class="button">Home</button></a>
+            <a href="../logout"><button class="button">Logout</button></a>
+            
+        </div>
+
+        <header>
+            <h1> Hello {{ user.first_name }}! </h1>
+            <hr>
+        </header>
+
+        <div class="content">
+            <form action="books/create" method="POST">
+                {% csrf_token %}
+                <h1 class="label"> Add a Favorite Book </h1>
+
+                <label for="title" class="label">Title:</label>
+                <input class="input" type="text" name="title" id="title" >
+
+                <label for="description" class="label">Description:</label>
+                <textarea class="textarea" type="textarea" name="desc" id="desc"></textarea>
+
+                <input class="button" type="submit" name="add_book" id="add_book" value="Add Book">
+
+                {% if messages %}
+                <ul class="messages">    
+                    {% for message in messages %}    
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+            </form>
+            <div class="all_books">
+                <h1 class="label"> All Books </h1>
+
+                <ul>
+                    {% for book in books %}
+                        <li class="book_list_item">
+                            <a href="books/{{book.id}}">{{book.title}}</a>
+                            <p class="user_name">Created By: {{ book.uploaded_by.first_name}}</p>
+                            {% if book in user.books_favorited.all %}
+                                <p class="favorited">This is one of your favorites</p>
+                            {% else %}
+                                <a href="books/{{book.id}}/favorite_main"><input class="button" type="button" name="login" id="login" value="Favorite"></a>
+                            {% endif %}
+                            <hr>
+                        </li>
+                    {% endfor %}
+                </ul>
+                
+            </div>
+        </div>
+    </body>
+</html>

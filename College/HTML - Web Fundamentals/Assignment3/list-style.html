@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>list-style</title>
+	<link rel=stylesheet type=text/css href=default.css>
+</head>
+<body>
+	
+<div id=header><a href=index.html>CSS REFERENCE GUIDE</a></div>
+
+<div id=navigation>
+	
+<ul>
+	<li><a href=background.html>background</a></li>
+	<li><a href=border.html>border</a></li>
+	<li><a href=clear.html>clear</a></li>
+	<li><a href=color.html>color</a></li>
+	<li><a href=display.html>display</a></li>
+	<li><a href=float.html>float</a></li>
+	<li><a href=font.html>font</a></li>
+	<li><a href=height.html>height</a></li>
+	<li><a href=letter-spacing.html>letter-spacing</a></li>
+	<li><a href=line-height.html>line-height</a></li>
+	<li><a href=list-style.html>list-style</a></li>
+	<li><a href=margin.html>margin</a></li>
+	<li><a href=opacity.html>opacity</a></li>
+	<li><a href=overflow.html>overflow</a></li>
+	<li><a href=padding.html>padding</a></li>
+	<li><a href=text-align.html>text-align</a></li>
+	<li><a href=text-decoration.html>text-decoration</a></li>
+	<li><a href=text-indent.html>text-indent</a></li>
+	<li><a href=text-transform.html>text-transform</a></li>
+	<li><a href=width.html>width</a></li>
+</ul>
+
+</div>
+	
+<div id=content>
+
+
+<h1>list-style</h1>
+
+	<p>Specifies the style of a list item marker. This is a shorthand property that sets all list properties in one declaration.</p>
+
+		<h3>Possible Values</h3>
+
+		<ul>
+			<li>type</li>
+			<li>position</li>
+			<li>image (url)</li>
+		</ul>
+
+<code>ul {list-style: square inside url("sqpurple.gif");}</code>
+
+
+<h2>list-style-type</h2>
+
+	<p>Specifies the style of the list marker bullet or numbering system within a list.</p>
+
+		<h3>Possible Values</h3>
+
+		<ul>   
+			<li>none - no list marker.</li>
+			<li>disc - solid circle.</li>
+			<li>circle - empty circle.</li>
+			<li>square - solid square.</li>
+			<li>decimal - 1, 2, 3, 4 etc.</li>
+			<li>decimal-leading-zero - 01, 02, 03 ... 10, 11 etc. </li>
+			<li>lower-roman - i, ii, iii, iv etc.</li>
+			<li>upper-roman - I, II, III, IV etc.</li>
+			<li>lower-greek - Greek characters. </li>
+			<li>lower-latin - a, b, c, d etc. </li>
+			<li>upper-latin - A, B, C, D etc.</li> 
+		</ul>
+
+<code>ul.a {list-style-type: circle;}
+
+ul.b {list-style-type: square;}
+
+ol.c {list-style-type: upper-roman;}
+
+ol.d {list-style-type: lower-alpha;}</code>
+
+
+<h2>list-style-position</h2>
+
+	<p>Specifies whether the list marker for a list item should appear inside or outside the list-item box.</p>
+
+		<h3>Possible Values</h3>
+
+		<ul>   
+			<li>inside</li>
+			<li>outside (default)</li>
+		</ul>
+
+<code>ul.a {list-style-position: outside;}
+
+ul.b {list-style-position: inside;}</code>
+
+
+<h2>list-style-image</h2>
+
+	<p>Specifies an image to be used as the list marker for a list item.</p>
+
+
+		<h3>Possible Values</h3>
+
+		<ul>
+			<li>URL</li>
+			<li>none (default)</li>
+		</ul>
+
+<code>ul {list-style-image: url('sqpurple.gif');}</code>
+
+
+</div> <!-- for id=content -->
+
+
+<div id=footer>&copy; HTML Class of 2021</div>
+  
+</body>	
+
+</html>

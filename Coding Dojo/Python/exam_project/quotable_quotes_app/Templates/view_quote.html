@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        {% load static %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        
+    </head>
+    <body>
+
+        <div class="logout_button">
+            <a href="/quotes"><button class="button">Home</button></a>
+            <a href="../logout"><button class="button">Logout</button></a>
+            
+        </div>
+
+        <header>
+            <h1> Hello {{ user.first_name }}! </h1>
+            <hr>
+        </header>
+
+
+        <div class="all_quotes">
+
+            <h1 class="label"> Quotes by {{ quote_creator.first_name }}</h1>
+            <h1 class="label"> Count: {{ count }}</h1>
+                    <ul>
+                        {% for quote in quote_creator.quotes_created.all %}
+                            <li class="quote_list_item">
+                                <p>{{ quote.author}}: {{quote.quote}}</p>
+                                <hr>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

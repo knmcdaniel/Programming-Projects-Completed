@@ -1,0 +1,359 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background-color: rgb(31, 62, 55)
+}
+
+body {
+    width: 900px;
+    height: 900px;
+    margin: 10px auto;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 900px;
+    height: 60px;
+    background-color: rgb(31, 48, 55);
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+    margin: 10px 20px;
+    font-weight: bold;
+}
+
+header h1 span {
+    font-weight: normal;
+    color: lightgray;
+}
+
+header img {
+    margin: 10px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+nav {
+    width: 900px;
+    height: 30px;
+    background: rgb(65,82,90);
+    background: linear-gradient(180deg, rgba(65,82,90,1) 0%, rgba(31,48,55,1) 100%);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    padding: 5px;
+    list-style-type: none;
+    border-right: solid;
+    border-right-color:rgba(65,82,90,1);
+    border-right-width: 2px;
+}
+
+nav ul li a:link {
+    padding: 5px 15px;
+    color: lightgray;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    padding: 5px 15px;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+nav ul li a:active {
+    padding: 5px 15px;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+nav ul li a:visited {
+    padding: 5px 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#main {
+    width: 900px;
+    height: 810px;
+    background: rgb(77,104,97);
+    background: linear-gradient(90deg, rgba(77,104,97,1) 0%, rgba(40,52,52,1) 100%);
+}
+
+.banner {
+    width: 900px;
+    height:100px;
+}
+
+.banner img{
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.mainContent {
+    width: 900px;
+    height: 688px;
+    background: rgb(48,65,73);
+    background: linear-gradient(90deg, rgba(48,65,73,1) 0%, rgba(31,48,55,1) 100%);
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    display:flex;
+}
+
+.sideBar {
+    width: 160px;
+    height: 648px;
+    padding: 20px;
+}
+
+.sideBar p {
+    font-size: 10px;
+    color: lightgray;
+}
+
+.sideBar input {
+    width: 120px;
+}
+
+.sideBar img {
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    vertical-align: top;
+}
+
+.sideBarNotes {
+    width: 160px;
+    height: 100px;
+    margin: 20px 0px;
+    border: solid;
+    border-color:rgb(66, 83, 90);
+    border-width: 1px;
+}
+
+.sideBarNotes h2 {
+    width: 150px;
+    background: rgb(61,78,85);
+    background: linear-gradient(180deg, rgba(61,78,85,1) 0%, rgba(39,58,64,1) 100%);
+    font-size: 14px;
+    padding: 5px;
+    color: lightgray;
+    font-weight: normal;
+}
+
+.sideBarNotes p {
+    width: 150px;
+    padding: 5px;
+    color: lightgray;
+    font-size: 10px;
+}
+
+.sideBarNotes a:link {
+    width: 150px;
+    padding: 5px;
+    font-size: 10px;
+    color: rgb(183,255,145);
+    text-decoration: none;
+}
+
+.sideBarNotes a:hover {
+    width: 150px;
+    padding: 5px;
+    font-size: 10px;
+    color: white;
+    text-decoration: underline;
+}
+
+.sideBarNotes a:active {
+    width: 150px;
+    padding: 5px;
+    font-size: 10px;
+    color: rgb(183,255,145);
+    text-decoration: underline;
+}
+
+.sideBarNotes a:visited {
+    width: 150px;
+    padding: 5px;
+    font-size: 10px;
+    color: rgb(183,255,145);
+    text-decoration: none;
+}
+
+.sideBarTextScroll {
+    width: 150px;
+    height: 140px;
+    padding: 5px;
+    border: solid;
+    border-color:rgb(66, 83, 90);
+    border-width: 1px;
+    background: rgb(19,36,43);
+    background: linear-gradient(180deg, rgba(19,36,43,1) 0%, rgba(58,89,84,1) 100%);
+}
+
+.sideBarTextScroll p {
+    padding: 10px 5px;
+    color: whitesmoke;
+    font-size: 10px;
+}
+
+.sideBarImage {
+    margin: 20px 0px;
+    width: 160px;
+    border: solid;
+    border-color:rgb(66, 83, 90);
+    border-width: 1px;
+}
+
+.sideBarImage img {
+    width: 160px;
+    border: none;
+}
+
+.content {
+    width: 605px;
+    height:608px;
+    background: rgb(38,59,64);
+    background: linear-gradient(180deg, rgba(38,59,64,1) 0%, rgba(58,90,85,1) 100%);
+    border-radius: 40px 40px 0px 0px;
+    padding: 40px;
+    font-family: Garamond, serif;
+    display: flex;
+}
+
+.contentText {
+    width: 475px;
+}
+
+.contentText h3 {
+    color: whitesmoke;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.contentText p {
+    color: lightgray;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.contentText a:link {
+    color: rgb(230,254,134);
+    font-size: 16px;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.contentText a:hover {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+.contentText a:active {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    text-decoration: underline;
+}
+.contentText a:visited {
+    color: rgb(230,254,134);
+    font-size: 16px;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.contentTextDivider {
+    margin: 20px 0px;
+    width: 100%;
+    height: 3px;
+    border: solid;
+    border-color:rgb(72, 107, 101);
+    border-width: 1px;
+}
+
+.contentSide {
+    width: 140px;
+    margin-left: 30px;
+}
+
+.contentSide fieldset {
+    width: 140px;
+    border: solid;
+    border-color:rgb(72, 107, 101);
+    border-width: 1px;
+    margin: 10px 0px;
+}
+
+.contentSide fieldset legend {
+    margin-left: 10px;
+    width: 75px;
+    padding-left: 5px;
+    border:solid;
+    border-color:rgb(72, 107, 101);
+    border-width: 1px;
+    color: whitesmoke;
+    
+}
+
+.contentSide fieldset p {
+    width: 150px;
+    padding: 5px;
+    color: lightgray;
+    font-size: 12px;
+    
+}
+
+.contentSide fieldset a:link {
+    color: rgb(230,254,134);
+    font-size: 12px;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.contentSide fieldset a:hover {
+    color: white;
+    font-size: 12px;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+.contentSide fieldset a:active {
+    color: white;
+    font-size: 12px;
+    text-align: justify;
+    text-decoration: underline;
+}
+.contentSide fieldset a:visited {
+    color: rgb(230,254,134);
+    font-size: 12px;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.contentSide img {
+    margin: 20px 0px;
+    width: 160px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+}

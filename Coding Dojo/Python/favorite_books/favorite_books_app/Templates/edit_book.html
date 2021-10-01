@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- {% load static %} -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        
+    </head>
+    <body>
+
+        <div class="logout_button">
+            <a href="/books"><button class="button">Home</button></a>
+            <a href="../logout"><button class="button">Logout</button></a>
+            
+        </div>
+
+        <header>
+            <h1> Hello {{ user.first_name }}! </h1>
+            <hr>
+        </header>
+
+        <div class="content">
+            <form action="{{book.id}}/update" method="POST">
+                {% csrf_token %}
+                <input class="input" type="text" name="title" id="title" value ="{{book.title}}">
+
+                <p>Added By: {{ book.uploaded_by.first_name}}</p>
+                <p>Added On: {{book.created_at}}</p>
+                <p>Last Updated On: {{book.updated_at}}</p>
+
+                <label for="description" class="label">Description:</label>
+                <textarea class="textarea" type="textarea" name="desc" id="description">{{book.desc}}</textarea>
+
+                <a href="{{book.id}}/update"><input class="button" type="submit" name="add_book" id="add_book" value="Update"></a>
+                <a href="{{book.id}}/destory"><input class="button destroy" type="button" name="add_book" id="add_book" value="Delete"></a>
+
+                {% if messages %}
+                <ul class="messages">    
+                    {% for message in messages %}    
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </form>
+            <div class="all_books">
+                <h1 class="label"> Users Who Like This Book: </h1>
+
+                <ul>
+                    {% for user in book.users_that_favorited.all %}
+                        <li>
+                            <p class="favorited">{{ user.first_name }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            
+        
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,5 @@
+Below is the inventory after the transactions.
+Piels: 201
+Coors: 200
+Bud: 300
+Iron City: 900

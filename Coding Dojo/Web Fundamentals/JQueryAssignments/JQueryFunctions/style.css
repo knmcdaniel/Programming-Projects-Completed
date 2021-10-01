@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: auto;
+    width: 900px;
+    margin-bottom: 50px;
+}
+
+div {
+    width: 900px;
+    border: solid 3px;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+h1 {
+    width: 900px;
+    text-align: center;
+}
+
+button {
+    padding: 2px 5px;
+    margin-left: 40px;
+}
+
+p {
+    text-align: center;
+}
+
+#textShow {
+    display: none;
+}
+
+#textSlideDown {
+    display: none;
+}
+
+#textFadeIn {
+    display:none;
+}
+
+.textAddClass {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+}
+
+#divHTML {
+    width: 600px;
+    margin: auto;
+    text-align:center;
+}
+
+#imgAttr {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#inputVal {
+    padding: 2px 5px;
+    margin-left: 40px;
+}

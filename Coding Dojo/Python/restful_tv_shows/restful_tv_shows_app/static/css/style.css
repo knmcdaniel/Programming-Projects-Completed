@@ -1,0 +1,49 @@
+*  {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 25px;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    width: 900px;
+    height: 600px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+ul {
+    width: 100%;
+}
+ul li {
+    width: 49%;
+    display: inline-block;
+}
+
+ul li > * {
+    width: 100%;
+}
+
+input .submit {
+    padding: 55px;
+}
+
+.messages {
+    color: red;
+}
+
+/* form {
+    width: 640px;
+    margin: auto;
+    padding: 20px;
+    background-color: grey;
+    border-style: solid;
+    border-width: 2px;
+} */
+

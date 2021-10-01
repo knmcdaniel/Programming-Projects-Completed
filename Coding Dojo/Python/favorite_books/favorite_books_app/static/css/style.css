@@ -1,0 +1,87 @@
+html {
+    background-color: grey;
+}
+
+*  {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 25px;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+/* ul {
+    width: 100%;
+}
+ul li {
+    width: 49%;
+    display: inline-block;
+}
+
+ul li > * {
+    width: 100%;
+} */
+
+input .submit {
+    padding: 55px;
+}
+
+.messages {
+    color: red;
+}
+
+header h1 {
+    padding-left: 40px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+
+.content {
+    display:flex;
+}
+
+div .view_book{
+    width: 50%;
+    padding:20px;
+}
+
+form {
+    width: 50%;
+    padding:20px;
+}
+
+div .all_books {
+    padding:20px;
+    width: 50%;
+    overflow-x: auto;
+    overflow-y: none;
+    height: 550px;
+}
+
+
+.book_list_item {
+    list-style: none;
+}
+
+.logout_button {
+    position: absolute;
+    padding-left: 700px;
+}
+
+.destroy {
+    background-color: red;
+}
+
+.empty {
+    list-style:none;
+}

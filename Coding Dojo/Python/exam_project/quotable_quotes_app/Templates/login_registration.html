@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        {% load static %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        
+    </head>
+    <body>
+        <div class="content">
+            <form action="register" method="POST">
+                {% csrf_token %}
+
+                {% if messages %}
+                <ul class="messages">    
+                    {% for message in messages %}    
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                <h1 class="label"> Register </h1>
+
+                <label for="first_name" class="label">First Name:</label>
+                <input class="input" type="text" name="first_name" id="first_name" >
+
+                <label for="last_name" class="label">Last Name:</label>
+                <input class="input" type="text" name="last_name" id="last_name">
+
+                <label for="email" class="label">Email:</label>
+                <input class="input" type="text" name="email" id="email" >
+
+                <label for="password" class="label">Password:</label>
+                <input class="input" type="password" name="password" id="password">
+
+                <label for="confirm_password" class="label">Confirm Password:</label>
+                <input class="input" type="password" name="confirm_password" id="confirm_password">
+
+                <input class="button" type="submit" name="register" id="register" value="Register">
+
+            </form>
+            <form action="login" method="POST">
+                {% csrf_token %}
+
+                {% if messages %}
+                <ul class="messages">    
+                    {% for message in messages %}    
+                    <br>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                <h1 class="label"> Login </h1>
+
+                <label for="email" class="label">Email:</label>
+                <input class="input" type="text" name="email" id="emailk" >
+
+                <label for="password" class="label">Password:</label>
+                <input class="input" type="password" name="password" id="password">
+
+                <input class="button" type="submit" name="login" id="login" value="Login">
+
+
+                
+            </form>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>font</title>
+	<link rel=stylesheet type=text/css href=default.css>
+</head>
+<body>
+	
+<div id=header><a href=index.html>CSS REFERENCE GUIDE</a></div>
+
+<div id=navigation>
+	
+<ul>
+	<li><a href=background.html>background</a></li>
+	<li><a href=border.html>border</a></li>
+	<li><a href=clear.html>clear</a></li>
+	<li><a href=color.html>color</a></li>
+	<li><a href=display.html>display</a></li>
+	<li><a href=float.html>float</a></li>
+	<li><a href=font.html>font</a></li>
+	<li><a href=height.html>height</a></li>
+	<li><a href=letter-spacing.html>letter-spacing</a></li>
+	<li><a href=line-height.html>line-height</a></li>
+	<li><a href=list-style.html>list-style</a></li>
+	<li><a href=margin.html>margin</a></li>
+	<li><a href=opacity.html>opacity</a></li>
+	<li><a href=overflow.html>overflow</a></li>
+	<li><a href=padding.html>padding</a></li>
+	<li><a href=text-align.html>text-align</a></li>
+	<li><a href=text-decoration.html>text-decoration</a></li>
+	<li><a href=text-indent.html>text-indent</a></li>
+	<li><a href=text-transform.html>text-transform</a></li>
+	<li><a href=width.html>width</a></li>
+</ul>
+
+</div>
+	
+<div id=content>
+
+<h1>font</h1>
+
+	<p>A shorthand property that sets several font properties in one declaration.</p>
+
+		<h3>Possible values</h3>
+
+		<ul>
+			<li>style</li>
+			<li>variant</li>
+			<li>weight</li>
+			<li>size</li>
+			<li>line-height</li>
+			<li>font-family</li>
+		</ul>
+
+<code>p.a {font: 15px Arial, sans-serif;}
+
+p.b {font: italic small-caps bold 12px/30px Georgia, serif;}</code>
+
+
+<h2>font-style</h2>
+
+	<p>The font-style property selects between normal, italic and oblique faces within a font family.</p>
+
+		<h3>Possible values</h3>
+
+		<ul>   
+			<li>normal</li>
+			<li>italic</li>
+			<li>oblique</li>
+		</ul>
+
+<code>p.a {font-style: normal;}
+
+p.b {font-style: italic;}
+
+p.c {font-style: oblique;}</code>
+
+
+<h2>font-variant</h2>
+
+	<p>Will set an element’s text to small-caps</p>
+
+		<h3>Possible values</h3>
+
+		<ul>  
+			<li>normal (default)</li>
+			<li>small-caps</li>
+		</ul>
+
+<code>p.small {font-variant: small-caps;}</code>
+
+
+<h2>font-weight</h2>
+
+	<p>Sets the boldness of a font. </p>
+
+		<h3>Possible values</h3>
+
+		<ul>  
+			<li>normal</li>
+			<li>bolder</li>
+			<li>bold</li>
+			<li>lighter</li>
+			<li>100, 200, 300... 900</li>
+		</ul>
+
+<code>p.normal {font-weight: normal;}
+
+p.thick {font-weight: bold;}
+
+p.thicker {font-weight: 900;}</code>
+  
+
+<h2>font-size</h2>
+
+	<p>Sets the size of a font.</p>
+
+		<h3>Possible values</h3>
+
+		<ul>    
+			<li>percentage</li>
+			<li>length</li>
+			<li>larger</li>
+			<li>smaller</li>
+			<li>xx-small</li>
+			<li>x-small</li>
+			<li>small</li>
+			<li>medium (default)</li>
+			<li>large</li>
+			<li>x-large</li>
+			<li>xx-large</li>
+		</ul>
+
+<code>div.a {font-size: 15px;}
+
+div.b {font-size: large;}
+
+div.c {font-size: 150%;}</code>
+
+
+<h2>font-family</h2>
+
+
+	<p>The font-family property specifies the font for an element.</p>
+
+	<p>The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.</p>
+
+	<p>There are two types of font family names:</p>
+
+	<p>Family-name - The name of a font-family, like “Times New Roman”, "courier", "arial", etc.</p> 
+	
+	<p>Generic-family - The name of a generic-family, like "serif", "sans-serif", "cursive", "fantasy", "monospace".</p>
+
+	<p>Start with the font you want, and always end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.</p>
+
+	<p>Note: Separate each value with a comma. If a font name contains white-space, it must be quoted. Single quotes must be used when using the "style" attribute in HTML.</p>
+
+
+		<h3>Possible values</h3>
+
+		<ul>    
+			<li>font name</li>
+			<li>multiple font names separated by commas</li>
+		</ul>
+
+<code>p.a {font-family: "Times New Roman", Times, serif;}
+
+p.b {font-family: Arial, Helvetica, sans-serif;}</code>
+
+
+</div> <!-- for id=content -->
+
+
+<div id=footer>&copy; HTML Class of 2021</div>
+  
+</body>	
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        {% load static %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        
+    </head>
+    <body>
+
+        <form action="create" method="POST">
+            {% csrf_token %}
+        
+
+            <h1 class="label"> Show Creation Form</h1>
+
+            <label for="title" class="label">Title:</label>
+            <input class="input" type="text" name="title" id="title">
+
+            <ul>
+                <li>
+                    <label for="network" class="label">Network:</label>
+                    <input class="input half" type="text" name="network" id="network">
+                </li>
+                <li>
+                    <label for="release_date" class="label">Release Date:</label>
+                    <input class="input half" type="date" name="release_date" id="release_date">
+                </li>
+            </ul>
+            
+            <label for="description" class="label">Description:</label>
+            <textarea class="textarea" type="textarea" name="description" id="description"></textarea>
+
+            <div class="control">
+                <input class="button is-primary submit" type="submit" name="submit" id="submit">
+            </div>
+
+            {% if messages %}
+                <ul class="messages">    
+                    {% for message in messages %}    
+                    <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </form>
+
+    </body>
+</html>
